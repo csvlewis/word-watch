@@ -5,6 +5,8 @@ $(document).ready(() => {
   fetch(url).then(function(response) {
     return response.json()
   }).then(function(json) {
-    console.log(json)
+    var string = JSON.stringify(json.word)
+    var top_word = string.match(/"([^"]+)"/)[1]
+    $( "h3" ).text(`Top word from Word Watch API: ${top_word}`)
   })
 })
