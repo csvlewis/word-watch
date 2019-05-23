@@ -8,8 +8,10 @@ function fetchTopWord() {
   var url = "http://localhost:3000/api/v1/top_word"
   fetch(url).then(function(response) { return response.json() })
   .then(function(json) {
-    var string = JSON.stringify(json.word)
-    $( "h3" ).text(`Top word from Word Watch API: ${string}`)
+    var word = JSON.stringify(Object.keys(json.word)[0])
+    var occurrences = JSON.stringify(Object.values(json.word)[0])
+    console.log($( "word-count" ).text())
+    $( "p" ).text(`${word} - found ${occurrences} times`)
     setTimeout(function(){ fetchTopWord() }, 1000);
   })
   .catch(error => console.error(error));
