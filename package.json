@@ -30,7 +30,7 @@
     "webpack-node-externals": "^1.6.0"
   },
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.21.1",
     "pryjs": "^1.0.3"
   },
   "author": "",
