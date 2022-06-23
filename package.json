@@ -18,7 +18,7 @@
     "chai": "^4.0.2",
     "css-loader": "^0.28.4",
     "jquery": "^3.4.1",
-    "jsdom": "^11.1.0",
+    "jsdom": "^16.5.0",
     "mocha": "^3.4.2",
     "mocha-webpack": "^0.7.0",
     "node-sass": "^4.12.0",
